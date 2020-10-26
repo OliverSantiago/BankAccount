@@ -38,4 +38,12 @@ public class BankAccount{
     return true;
   }
 
+  public String toString(){
+    String answer = "";
+    answer += Integer.toString(accountID);
+    answer += "\\";
+    answer += Double.toString(balance);
+    return answer;
+  }
+
 }
