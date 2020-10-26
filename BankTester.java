@@ -6,6 +6,5 @@ public class BankTester{
     fa.setPassword("newPass");
     System.out.println(fa.deposit(100));
     System.out.println(fa.deposit(200));
-    
   }
 }
