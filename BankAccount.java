@@ -3,25 +3,25 @@ public class BankAccount{
   private int accountID;
   private String password;
 
-  public Construct(String p, int id){
+  public BankAccount(String p, int id){
     balance = 0;
     accountID = id;
     password = p;
   }
 
-  public double getbalance(){
+  public double getBalance(){
     return balance;
   }
 
-  public int getaccountID(){
+  public int getAccountID(){
     return accountID;
   }
 
-  public static int passwordReset(newP){
-    password = newP;
+  public void setPassword(String newPass){
+    password = newPass;
   }
 
-  public static int deposit(dep){
+  public boolean deposit(int dep){
     if (dep>0){
       balance+=dep;
       return true;
