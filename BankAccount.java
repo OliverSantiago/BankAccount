@@ -29,5 +29,13 @@ public class BankAccount{
     return false;
   }
 
+  public boolean withdraw(double wid){
+    balance-=wid;
+    if (balance<0){
+      balance+=wid;
+      return false;
+    }
+    return true;
+  }
 
 }
