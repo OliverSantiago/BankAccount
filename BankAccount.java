@@ -3,7 +3,7 @@ public class BankAccount{
   private int accountID;
   private String password;
 
-  public BankAccount(String p, int id){
+  public BankAccount( int id,String p){
     balance = 0;
     accountID = id;
     password = p;
@@ -21,7 +21,7 @@ public class BankAccount{
     password = newPass;
   }
 
-  public boolean deposit(int dep){
+  public boolean deposit(double dep){
     if (dep>0){
       balance+=dep;
       return true;
@@ -39,9 +39,9 @@ public class BankAccount{
   }
 
   public String toString(){
-    String answer = "";
+    String answer = "#";
     answer += Integer.toString(accountID);
-    answer += "\\";
+    answer += "$";
     answer += Double.toString(balance);
     return answer;
   }
